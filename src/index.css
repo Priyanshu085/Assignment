@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  padding: 0;
+  margin: 0;
+  background: #000;
+  color: white;
+}
+
+/* .assignment-i{
+  @apply bg-white text-black capitalize ;
+} */
+
+.btn{
+  @apply uppercase mt-4 h-10 text-white px-6 rounded-sm justify-center ;
+}
+
+.form{
+  @apply bg-white rounded-lg text-black p-6 w-96 ml-24 mt-4
+}
+
+h1{
+  @apply text-3xl
+}
+
+label{
+  @apply text-black text-sm
+}
+
+input{
+  @apply border-2 rounded-md px-4 py-2 border-black w-full mb-2
+}
+
+.text_link{
+  @apply text-[red] underline pb-14 w-full justify-center 
+}
+
+p{
+  @apply my-4
+}
