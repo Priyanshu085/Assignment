@@ -9,9 +9,9 @@
   color: white;
 }
 
-/* .assignment-i{
-  @apply bg-white text-black capitalize ;
-} */
+.assignment-i{
+  @apply p-8 bg-white text-black capitalize ;
+}
 
 .btn{
   @apply uppercase mt-4 h-10 text-white px-6 rounded-sm justify-center ;
@@ -29,8 +29,20 @@ label{
   @apply text-black text-sm
 }
 
+.custom-hr {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  line-height: 0.1em;
+  margin: 20px 0;
+}
+
+.custom-hr span {
+  background: #fff;
+  padding: 0 10px;
+}
+
 input{
-  @apply border-2 rounded-md px-4 py-2 border-black w-full mb-2
+  @apply border-2 rounded-md px-4 py-2 border-gray-400 w-full mb-2
 }
 
 .text_link{
@@ -40,3 +52,48 @@ input{
 p{
   @apply my-4
 }
+
+.assignment-iii{
+  /* background: #fff; */
+  width: 1500;
+  height: fit-content;
+}
+
+.blog-title{
+  @apply m-5 ;
+}
+
+.labels{
+  @apply rounded-lg text-xs border-2 text-black border-black px-2 ;
+}
+
+.link{
+  @apply hidden;
+}
+
+.card{
+  @apply flex gap-7 justify-between text-black
+}
+
+.blog-bg{
+  z-index: 999;
+/* -webkit-transition-property: all; 
+-webkit-transition-duration: 0.3s; 
+-webkit-transition-timing-function: ease;  */
+}
+
+.blog-bg:hover{
+  transform: scale(3);
+}
+
+.box:hover .link{
+  @apply flex duration-1000 ease-in-out translate-x-20 translate-y-10;
+  box-shadow: 8px 8px 8px rgba(99, 99, 99, 0.631);
+}
+
+.box:hover{
+  box-shadow: 8px 8px 8px rgba(99, 99, 99, 0.631);
+  background: #ffffff;
+  color: gray;
+}
+
