@@ -2,23 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  padding: 0;
-  margin: 0;
-  background: #000;
-  color: white;
-}
-
 .assignment-i{
-  @apply p-8 bg-white text-black capitalize ;
+  @apply p-8 mx-4 flex gap-14 bg-white text-black capitalize ;
 }
 
 .btn{
-  @apply uppercase mt-4 h-10 text-white px-6 rounded-sm justify-center ;
+  @apply uppercase mt-4 h-10 text-white px-6 rounded-sm justify-center transition-shadow ease-out duration-500;
+}
+
+.btn:hover{
+    box-shadow:  5px 5px 31px #666666,
+               -5px -5px 31px #ffffff;
 }
 
 .form{
-  @apply bg-white rounded-lg text-black p-6 w-96 ml-24 mt-4
+  @apply bg-blue-50 rounded-lg text-black p-6 w-96 ml-24 mt-4
 }
 
 h1{
@@ -27,18 +25,6 @@ h1{
 
 label{
   @apply text-black text-sm
-}
-
-.custom-hr {
-  text-align: center;
-  border-bottom: 2px solid #000;
-  line-height: 0.1em;
-  margin: 20px 0;
-}
-
-.custom-hr span {
-  background: #fff;
-  padding: 0 10px;
 }
 
 input{
@@ -53,10 +39,12 @@ p{
   @apply my-4
 }
 
+.assignment-ii{
+  @apply mx-auto justify-center items-center content-center
+}
+
 .assignment-iii{
-  /* background: #fff; */
-  width: 1500;
-  height: fit-content;
+  @apply w-[1500] h-fit border-black border-4 my-6
 }
 
 .blog-title{
@@ -75,13 +63,6 @@ p{
   @apply flex gap-7 justify-between text-black
 }
 
-.blog-bg{
-  z-index: 999;
-/* -webkit-transition-property: all; 
--webkit-transition-duration: 0.3s; 
--webkit-transition-timing-function: ease;  */
-}
-
 .blog-bg:hover{
   transform: scale(3);
 }
@@ -94,6 +75,6 @@ p{
 .box:hover{
   box-shadow: 8px 8px 8px rgba(99, 99, 99, 0.631);
   background: #ffffff;
-  color: gray;
+  /* color: gray; */
 }
 
